@@ -1241,4 +1241,333 @@ header nav a:hover {
     border-radius: 10px;     /* Bordes redondeados opcional */
     box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* Sombra opcional */
 }
+.artists-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background-color: #000;
+}
 
+.artist-card {
+  text-align: center;
+  background-color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  padding-bottom: 15px;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.artist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 0, 80, 0.4);
+}
+
+.artist-card h2 {
+  color: #fff;
+  margin-top: 12px;
+  font-size: 1.2rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    padding: 10px 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0044; /* color al pasar el mouse */
+}
+
+.artist-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.artist-card {
+    text-align: center;
+    width: 200px;
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.artist-card img:hover {
+    transform: scale(1.05);
+}
+/* Botón volver al inicio */
+.volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.volver-inicio a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.volver-inicio:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Animación */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Botón volver al inicio */
+.volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.volver-inicio a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.volver-inicio:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Animación */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Estilo animado para botones del menú */
+nav a {
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background: rgba(255, 0, 50, 0.8); /* Color rojo/neón */
+    box-shadow: 0 0 15px rgba(255, 0, 50, 0.6), 0 0 30px rgba(255, 0, 50, 0.4);
+    animation: glowPulseMenu 2s infinite alternate;
+}
+
+/* Animación glow pulsante para botones */
+@keyframes glowPulseMenu {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 50, 0.6), 0 0 20px rgba(255, 0, 50, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 50, 0.9), 0 0 40px rgba(255, 0, 50, 0.6);
+    }
+}
+/* Caja para separar contenido */
+.artist-info {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.artist-info img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.artist-info .bio {
+  color: white;
+  font-size: 16px;
+}
+nav a {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Contorno tenue */
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Sombra roja */
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Sombra más intensa al pasar el mouse */
+}
+nav ul li a {
+    position: relative;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 0, 0, 0.3); /* Luz roja tenue */
+    border-radius: 5px; /* Bordes suaves */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4); /* Sombra de iluminación */
+}
+
+nav ul li {
+    margin: 0 5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Separación entre botones */
+}
+
+nav ul li:last-child {
+    border-right: none; /* El último no necesita separación */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3); /* Línea divisoria */
+}
+
+nav ul li:last-child {
+    border-right: none; /* El último no necesita línea */
+}
+.contacto {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formulario button {
+  background: #00bfff;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #0088cc;
+}
+.contacto {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formulario button {
+  background: #00bfff;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #0088cc;
+}
