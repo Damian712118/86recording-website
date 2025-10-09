@@ -1571,3 +1571,89 @@ nav ul li:last-child {
 .formulario button:hover {
   background: #0088cc;
 }
+/* ===== Diseño Responsive Mejorado ===== */
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    header, nav, section, footer {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, nav, section, footer {
+        padding: 8px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .menu-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Ajuste específico para imágenes de lanzamientos y artistas */
+img.lanzamiento-img, img.artista-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 6px;
+}
+
+/* Ajuste de contenedor general para móviles */
+.container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Ajuste para formularios en móviles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Evita que el menú se vea comprimido */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
