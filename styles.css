@@ -1197,7 +1197,7 @@ header {
   background-color: #111; /* Fondo oscuro */
   padding: 15px 0; /* Espacio arriba y abajo */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
-  position: sticky; /* Mantiene el menú fijo */
+  position: relative; !important;
   top: 0;
   z-index: 1000;
 }
