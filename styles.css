@@ -1738,3 +1738,6 @@ input, textarea, button {
         color: white !important;
     }
 }
+.menu, .nav, #menu {
+    position: relative !important;
+}
