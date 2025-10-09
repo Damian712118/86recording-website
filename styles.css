@@ -1657,3 +1657,20 @@ input, textarea, button {
         width: 100%;
     }
 }
+/* Menú responsive para móvil */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+}
